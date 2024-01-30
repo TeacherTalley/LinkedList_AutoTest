@@ -1,0 +1,30 @@
+
+Test some integer lists...
+Integer list: 5 10 20 30
+Front element: 5
+Back element: 30
+Pop 5
+Integer list: 10 20 30
+Pop 10
+Integer list 1: 20 30
+Length of list 1 is 2
+List 1 is not empty
+Pop 20
+Pop 30
+Integer list::
+List 1 is empty
+Integer list 1: 10 20 30
+Copy integer list 1 to integer list 2.
+Integer list 2: 10 20 30
+Integer list 1:30:
+Integer list 2:10 20 30:
+Integer list 2 via std cout: 10 20 30:
+
+Test some exceptions...
+List 1 is empty
+Front element: Exception: LinkedList is empty
+Back element: Exception: LinkedList is empty
+
+Test some string lists...
+String list 1: Please, may I have some spam?
+String list 1: have some
