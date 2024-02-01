@@ -50,45 +50,51 @@ Test 6:
 - Name: PushBackAndBack Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PushBackAndBack
-- Points: 17
+- Points: 15
 
 Test 7:
 - Name: PopBack Test
 - Setup: 
-- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopFront
-- Points: 17
+- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBack
+- Points: 15
 
 Test 8:
+- Name: PopFront Test
+- Setup: 
+- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopFront
+- Points: 15
+
+Test 9:
 - Name: PushFrontAndFront Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PushFrontAndFront
-- Points: 17
+- Points: 15
 
-Test 9:
+Test 10:
 - Name: Insert Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Insert
-- Points: 17
+- Points: 25
 
-Test 10:
+Test 11:
 - Name: Erase Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Erase
 - Points: 1
 
-Test 11:
+Test 12:
 - Name: FrontException Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.FrontException
 - Points: 1
 
-Test 12:
+Test 13:
 - Name: BackException Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.FrontException
 - Points: 1
 
-Test 13:
+Test 14:
 - Name: Print Test
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Print
