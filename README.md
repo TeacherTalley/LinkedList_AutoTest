@@ -16,86 +16,104 @@ To configure the autograding, take the following steps in the **LinkedList* repo
 
 Under the autograding setup:
 
-Test 1: 
+Test: 
 - Name: AutoTest Setup - Install test code, copy student source, build student and test code
 - Setup: git clone https://github.com/TeacherTalley/LinkedList_AutoTest.git
 - Run: cd LinkedList_AutoTest && ./AutoTest_setup.sh
 - Points: 0
 
-Test 2:
-- Name: Main Output Test - Run student main and compare output to test output
+Test:
+- Name: Main Output - Run student main and compare output to test output
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_OutputTest.sh
 - Points: 5
 
-Test 3:
-- Name: Coding Style Test - Run cpplint on student code
+Test:
+- Name: Coding Style - Run cpplint on student code
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_Style.sh
 - Points: 5
 
-Test 4:
-- Name: Empty Test
+Test:
+- Name: Empty
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Empty
 - Points: 1
 
-Test 5:
-- Name: Size Test
+Test:
+- Name: Size
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Size
 - Points: 1
 
-Test 6:
-- Name: PushBackAndBack Test
+Test:
+- Name: PushBackAndBack
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PushBackAndBack
 - Points: 15
 
-Test 7:
-- Name: PopBack Test
+Test:
+- Name: PopBack
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBack
 - Points: 15
 
-Test 8:
-- Name: PopFront Test
+Test:
+- Name: PopFront
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopFront
 - Points: 15
 
-Test 9:
-- Name: PushFrontAndFront Test
+Test:
+- Name: PushFrontAndFront
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PushFrontAndFront
 - Points: 15
 
-Test 10:
-- Name: Insert Test
+Test:
+- Name: Insert
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Insert
 - Points: 25
 
-Test 11:
-- Name: Erase Test
+Test:
+- Name: Erase
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Erase
 - Points: 1
 
-Test 12:
-- Name: FrontException Test
+Test:
+- Name: FrontException
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.FrontException
 - Points: 1
 
-Test 13:
-- Name: BackException Test
+Test:
+- Name: BackException
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.FrontException
 - Points: 1
 
-Test 14:
-- Name: Print Test
+Test:
+- Name: PopBackException
+- Setup: 
+- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBackException
+- Points: 1
+
+Test:
+- Name: PushBackException
+- Setup: 
+- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBackException
+- Points: 1
+
+Test:
+- Name: InsertException
+- Setup: 
+- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBackException
+- Points: 1
+
+Test:
+- Name: Print
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Print
 - Points: 0

@@ -111,6 +111,33 @@ TEST_F(LinkedListTest, BackException)
     EXPECT_THROW(list.back(), std::out_of_range);
 }
 
+// Test case for insert() method exception
+TEST_F(LinkedListTest, InsertException)
+{
+    EXPECT_THROW(list.insert(4, 5), std::out_of_range);
+    EXPECT_THROW(list.insert(-1, -1), std::out_of_range);
+}
+
+// Test case for pop_back() method exception
+TEST_F(LinkedListTest, PopBackException)
+{
+    list.clear();
+    EXPECT_THROW(list.pop_back(), std::out_of_range);
+}
+
+// Test case for pop_back() method exception
+TEST_F(LinkedListTest, PopFrontException)
+{
+    list.clear();
+    EXPECT_THROW(list.pop_front(), std::out_of_range);
+}
+
+{
+    list.clear();
+    EXPECT_THROW(list.back(), std::out_of_range);
+}
+
+
 // Test case for print() method
 TEST_F(LinkedListTest, Print)
 {
