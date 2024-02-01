@@ -30,7 +30,7 @@ echo "--- Unit testing (single test at a time) ---"
 ./AutoTest_gtests --gtest_filter=LinkedListTest.BackException
 ./AutoTest_gtests --gtest_filter=LinkedListTest.InsertException
 ./AutoTest_gtests --gtest_filter=LinkedListTest.PopBackException
-./AutoTest_gtests --gtest_filter=LinkedListTest.PushBackException
+./AutoTest_gtests --gtest_filter=LinkedListTest.PopFrontException
 ./AutoTest_gtests --gtest_filter=LinkedListTest.Print
 
 echo
