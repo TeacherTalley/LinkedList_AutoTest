@@ -1,3 +1,4 @@
+Welcome to the LinkedList test program.
 
 Test some integer lists...
 Integer list: 5 10 20 30
@@ -28,3 +29,4 @@ Back element: Exception: LinkedList is empty
 Test some string lists...
 String list 1: Please, may I have some spam?
 String list 1: have some
+Goodbye!
