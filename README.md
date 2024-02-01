@@ -14,7 +14,11 @@ To configure the autograding, take the following steps in the **LinkedList* repo
 
 **Make sure to create AutoTest_main_output.txt from the current main**
 
-Under the autograding setup:
+Under the autograding setup on Git Hub Classroom,
+see Excel spreadsheet AutoTest_setup.xlsx.
+
+---------------------------------------
+Leave these here for now, but remove.
 
 Test: 
 - Name: AutoTest Setup - Install test code, copy student source, build student and test code
@@ -56,13 +60,13 @@ Test:
 - Name: PopBack
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBack
-- Points: 15
+- Points: 10
 
 Test:
 - Name: PopFront
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopFront
-- Points: 15
+- Points: 10
 
 Test:
 - Name: PushFrontAndFront
@@ -74,7 +78,7 @@ Test:
 - Name: Insert
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.Insert
-- Points: 25
+- Points: 20
 
 Test:
 - Name: Erase
@@ -98,19 +102,19 @@ Test:
 - Name: PopBackException
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBackException
-- Points: 1
+- Points: 5
 
 Test:
-- Name: PushBackException
+- Name: PopFrontException
 - Setup: 
-- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBackException
-- Points: 1
+- Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopFrontException
+- Points: 5
 
 Test:
 - Name: InsertException
 - Setup: 
 - Run: ./LinkedList_AutoTest/AutoTest_gtest.sh LinkedListTest.PopBackException
-- Points: 1
+- Points: 5
 
 Test:
 - Name: Print
