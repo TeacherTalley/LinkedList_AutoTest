@@ -132,12 +132,6 @@ TEST_F(LinkedListTest, PopFrontException)
     EXPECT_THROW(list.pop_front(), std::out_of_range);
 }
 
-{
-    list.clear();
-    EXPECT_THROW(list.back(), std::out_of_range);
-}
-
-
 // Test case for print() method
 TEST_F(LinkedListTest, Print)
 {
