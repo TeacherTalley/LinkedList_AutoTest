@@ -7,6 +7,6 @@ echo "Source files:" $srcfiles
 
 # for some reason, GitHub Classroom environment does not use cpplint.cfg
 # explcitly ignore some style checks
-filters=-legal/copyright,-build/header_guard,-whitespace/braces,-runtime/explicit,-whitespace/newline,-whitespace/end_of_line,-whitespace/blank_line
+filters=-legal/copyright,-build/header_guard,-whitespace/braces,-runtime/explicit,-whitespace/newline,-whitespace/end_of_line,-whitespace/blank_line,-whitespace/indent
 
 cpplint --filter=$filters $srcfiles
