@@ -47,5 +47,4 @@ Expected failure trying to insert out of range
 
 Remove the first and last element and print result
 String list 1: Please, may I have some more spam?
-
 Goodbye!

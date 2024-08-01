@@ -7,7 +7,7 @@
 * @course: Data Structures (CSCI 2320)
 *
 * @file AutoTest_gtests.cpp
-* @brief Google Test for Stack lab.
+* @brief Google Test for LinkedList lab.
 -----------------------------------------------------------------------
 */
 
@@ -80,12 +80,24 @@ TEST_F(LinkedListTest, PushFrontAndFront)
 // Test case for insert() method
 TEST_F(LinkedListTest, Insert)
 {
+    // insert at second position
     list.insert(1, 5);
     EXPECT_EQ(list.size(), 4);
     EXPECT_EQ(list.front(), 1);
     EXPECT_EQ(list.back(), 3);
-    EXPECT_EQ(list.front(), 1);
+    list.pop_front();
+    EXPECT_EQ(list.front(), 5);
     EXPECT_EQ(list.back(), 3);
+    // insert at end
+    list.insert(list.size(), 6);
+    EXPECT_EQ(list.front(), 5);
+    EXPECT_EQ(list.back(), 6);
+    // insert at first position
+    list.insert(0, 7);
+    EXPECT_EQ(list.front(), 7);
+    EXPECT_EQ(list.back(), 6);
+    list.pop_front();
+    EXPECT_EQ(list.front(), 5);
 }
 
 // Test case for erase() method

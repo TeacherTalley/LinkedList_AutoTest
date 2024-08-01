@@ -1,18 +1,19 @@
 #!/bin/bash
+repo=LinkedList_AutoTest
+echo "#################### START: AutoTest Setup ##################################"
+echo " To be consistent with the grading environment, assume we are starting out "
+echo " in the source directory (i.e., the parent of the AutoTest directory)."
+echo " You will get a cd error if you execute directly from the AutoTest directory."
+echo "#############################################################################"
+cd $repo
 echo
 echo "#################### START: AutoTest Results #####################"
-srcfiles="main.cpp LinkedList.h"
-echo "Source files:" $srcfiles
-echo
 echo "--- Checking code format (cpplint) ---"
-filters=-legal/copyright,-whitespace/braces,-runtime/explicit,-whitespace/newline,-whitespace/end_of_line
-cpplint --filter=$filters $srcfiles
-echo
-cd build
+./AutoTest_Style.sh
 echo
 echo "--- Checking main output (diff) ---"
-./main > test_main_output.txt
-diff ../AutoTest_main_output.txt test_main_output.txt
+cd build
+../AutoTest_OutputTest.sh
 echo
 echo "--- Unit testing (googletest - all tests at once) ---"
 ctest
