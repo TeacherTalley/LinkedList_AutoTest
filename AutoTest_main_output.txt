@@ -35,9 +35,11 @@ String list 1 has length 4
 String list 1: Please, may I have some more spam?
 
 Try inserting an element at the beginning
+String list 1 has length 6
 String list 1: Sir!  Sir!  Please, may I have some more spam?
 
 Try inserting an element at the end
+String list 1 has length 7
 String list 1: Sir!  Sir!  Please, may I have some more spam? I love spam!
 
 Try inserting an element out of range
